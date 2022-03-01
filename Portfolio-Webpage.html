@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    body{
+      background-color: #303841;
+    }
+    #navbar{
+      display: flex;
+      background-color: #be3144;
+      height: 80px;
+      width: 100%;
+      margin-top: 0;
+      padding-top: 0;
+      left: 0;
+      top:0;
+      position: fixed;
+      justify-content: right;
+      align-items: center;
+      padding-right: 40px;
+      margin-right:20px;
+      font-size: 30px; 
+    }
+    #welcome-section{
+      display: flex;
+      flex-direction: column;
+      font-size: 40px;
+      color:white;
+      margin-top: 60px;
+      padding-top:60px;
+      justify-content: center;
+      align-items: center;
+      height:83vh;
+      width: 100%;
+    }
+  
+    a{
+      text-decoration: none;
+      color: white;
+      size: 20px;
+      padding-right:10px;
+
+    }
+    .btm{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width:100%;
+      padding: 20px;
+      margin: 10px;
+    }
+    
+    .web{
+      color: #be3144;
+    }
+    .section-project{
+      background-color: #45567d;
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+    }
+    .project-title{
+      font-size: 40px;
+      color: white;
+      text-decoration: underline;
+      align-items: center;
+      justify-content: center;
+      padding:10px;
+     
+    }
+    .projects{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: #be3144;
+    }
+    .project-img{
+      width: 300px;
+      height: 400px;
+      margin: 20px;
+    }
+    .project-tile{
+      font-size: 30px;
+      color: white;
+      align-items: center;
+    }
+
+    .all-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap: 12px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom:12px;
+    align-items: center;
+    text-align: center;
+    }
+    
+    .bottom-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;   
+        padding:20px;
+        font-size: 40px;
+         color:white;
+        background-color: #303841;
+    }
+  
+    footer{
+      display: flex;
+      
+      border-top: 3px solid #be3144;
+      width: 100%;
+      background-color: #303841;
+      color: white;
+      justify-content: space-between;
+      margin:0 20px 0 20px;
+      padding:0 20px 0 20px;
+      align-items: center;
+
+    }
+   
+    .btn{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width:100%;
+      max-width:1000px;
+      padding-right: 10px;
+   
+      margin-bottom: 20px;
+    }
+    @media  only screen and(max-width: 600px) { 
+      .btn{
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <nav id="navbar">
+    <a href="#About">About</a>
+    <a href="#Work">work</a>
+    <a href="#Contact">Contact</a>
+ <header>
+
+</header> 
+</nav>
+</body>
+<section id="welcome-section">
+  <h1>Hi I'm Mays </h1>
+  <p class="web">Web Developer</p>
+</section>
+
+<section id="projects" class="section-project">
+    <p class="project-title">These are some of my projects</p>
+  
+  <div class="all-projects">
+    
+    <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project-tile">
+      
+      <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" class="project-img" alt="tribute page">
+       <p>Tribute Page</p>
+    </a>
+ 
+   <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project-tile"> <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="project" class="project-img" alt="Random Quote Machine"> <p>Random Quote Machine</p>
+     </a>
+    
+   <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project-tile">
+    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="project"  class="project-img" alt="JavaScript Calculator"> <p> JavaScript Calculator</p> 
+   </a>
+   <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project-tile"> <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="project"  class="project-img" alt="
+    Map Data Across the Globe">
+     <p> Map Data Across the Globe</p>
+   </a>
+  
+
+   <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project-tile" > <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="project"  class="project-img" alt="
+  Wikipedia Viewer">
+    <p> Wikipedia Viewer</p> 
+   </a>
+
+ 
+  <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project-tile">  <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png " alt="project"  class="project-img" alt="
+    Tic Tac Toe Game">
+    <p>Tic Tac Toe Game</p>
+    
+   </a>
+</div>
+
+
+<section id="Contact" class="bottom-section">
+  <div class="btm"><h1>Let's work together...</h1>
+    <p>How do you take your coffee?</p></div>
+    <div class="btn">
+      <a href="https://www.facebook.com/freecodecamp" class="link-details" >Facebook</a>
+    <a href="https://github.com/freecodecamp" target="_blank" id="profile-link" class="link-details">github</a>
+ 
+  <a href="https://twitter.com/freecodecamp" class="link-details" target="_blank"> Twitter</a>
+  <a href="mailto:example@example.com" class="link-details" target="_blank"> Send a mail</a>
+  <a href="tel:555-555-555"class="link-details" target="_blank"> Call me</a>
+</div>
+</section>
+<footer>
+  <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+  <p>© Created for freeCodeCamp </p>
+</footer>
+</html>
